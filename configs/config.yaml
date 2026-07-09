@@ -1,0 +1,290 @@
+# =============================================================================
+# Physics-Guided Hybrid Mamba-TKAN Framework
+# Global Topside Ionosphere-Plasmasphere TEC Reconstruction
+# Phase 1: Configuration File
+# =============================================================================
+
+project:
+  name: "Mamba-TKAN-TEC-Reconstruction"
+  version: "1.0.0"
+  description: >
+    Physics-Guided Hybrid Mamba-TKAN Framework for Global Topside
+    Ionosphere-Plasmasphere TEC Reconstruction using GIRO Digisonde Observations.
+  phase: 1
+
+# ---------------------------------------------------------------------------
+# Paths
+# ---------------------------------------------------------------------------
+paths:
+  data_root: "data"
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  intermediate_data: "data/intermediate"
+  logs: "logs"
+  models: "models"
+  results: "results"
+  plots: "results/plots"
+  notebooks: "notebooks"
+  scaler_save: "models/scalers"
+
+# ---------------------------------------------------------------------------
+# Data Configuration
+# ---------------------------------------------------------------------------
+data:
+  # Master CSV or directory containing station CSV files
+  input_file: "data/raw/ionosonde_data.csv"
+  output_processed_csv: "data/processed/processed_dataset.csv"
+  output_numpy_dir: "data/processed/numpy"
+  output_tensor_dir: "data/processed/tensors"
+
+  # Target column
+  target_column: "TopsideTEC"
+
+  # Timestamp column
+  timestamp_column: "Timestamp"
+  timestamp_format: "%Y-%m-%d %H:%M:%S"
+
+  # Station identifier column
+  station_column: "Station"
+
+  # Stations to include (empty list = use all stations)
+  station_list: []
+    # - "DB049"
+    # - "EG931"
+    # - "JR055"
+
+  # Latitude groupings for regional analysis
+  latitude_groups:
+    equatorial: [-15.0, 15.0]
+    low_latitude: [15.0, 30.0]
+    mid_latitude: [30.0, 60.0]
+    high_latitude: [60.0, 90.0]
+    equatorial_south: [-30.0, -15.0]
+    low_latitude_south: [-60.0, -30.0]
+
+  # Coordinate bounds validation
+  latitude_bounds: [-90.0, 90.0]
+  longitude_bounds: [-180.0, 180.0]
+
+# ---------------------------------------------------------------------------
+# Feature Configuration
+# ---------------------------------------------------------------------------
+features:
+  # Raw ionosonde features
+  ionosonde_features:
+    - "TEC"
+    - "foF2"
+    - "hmF2"
+    - "scaleF2"
+    - "B0"
+    - "B1"
+    - "zhalfNm"
+    - "yF2"
+    - "FF"
+    - "QF"
+
+  # Space weather features
+  space_weather_features:
+    - "F10.7"
+    - "Kp"
+    - "Ap"
+    - "Dst"
+    - "SSN"
+
+  # Geophysical features
+  geophysical_features:
+    - "Latitude"
+    - "Longitude"
+    - "DayOfYear"
+    - "LocalTime"
+
+  # Engineered features to generate
+  engineered_features:
+    cyclic:
+      - name: "LocalTime"
+        period: 24.0
+      - name: "DayOfYear"
+        period: 365.25
+      - name: "Month"
+        period: 12.0
+
+    lag_features:
+      column: "TEC"
+      lags: [1, 2, 3]
+
+    rolling_features:
+      column: "TEC"
+      windows: [3, 6, 12]
+      statistics: ["mean", "std"]
+
+    difference_features:
+      - column: "TEC"
+        periods: [1]
+
+    gradient_features:
+      - column: "TEC"
+
+    temporal_features:
+      - "Hour"
+      - "Month"
+      - "Season"
+
+# ---------------------------------------------------------------------------
+# Data Validation
+# ---------------------------------------------------------------------------
+validation:
+  # Physical bounds for key parameters
+  tec_bounds: [0.0, 1000.0]         # TECU
+  fof2_bounds: [1.0, 20.0]          # MHz
+  hmf2_bounds: [100.0, 600.0]       # km
+  b0_bounds: [10.0, 500.0]          # km
+  b1_bounds: [1.0, 10.0]            # dimensionless
+  kp_bounds: [0.0, 9.0]
+  ap_bounds: [0.0, 400.0]
+  dst_bounds: [-600.0, 100.0]       # nT
+  f107_bounds: [60.0, 500.0]        # SFU
+  ssn_bounds: [0.0, 400.0]
+
+  # Allow these fraction of data to be NaN before raising error
+  max_nan_fraction: 0.30
+
+  # Maximum allowed duplicate rows (fraction)
+  max_duplicate_fraction: 0.05
+
+# ---------------------------------------------------------------------------
+# Missing Value Handling
+# ---------------------------------------------------------------------------
+missing_values:
+  # Strategy: forward_fill | backward_fill | interpolate | median | mean | drop
+  strategy: "interpolate"
+  interpolation_method: "linear"   # linear | cubic | spline
+  interpolation_limit: 6           # max consecutive NaNs to fill
+  fallback_strategy: "median"      # applied after primary strategy
+  group_by_station: true           # fill within each station independently
+
+# ---------------------------------------------------------------------------
+# Outlier Detection
+# ---------------------------------------------------------------------------
+outliers:
+  # Methods to apply: iqr | zscore | isolation_forest
+  methods:
+    - "iqr"
+    - "zscore"
+    - "isolation_forest"
+
+  iqr:
+    multiplier: 2.5
+    columns:               # empty = apply to all numeric columns
+      - "TEC"
+      - "foF2"
+      - "hmF2"
+      - "F10.7"
+
+  zscore:
+    threshold: 3.5
+    columns:
+      - "TEC"
+      - "foF2"
+      - "hmF2"
+
+  isolation_forest:
+    contamination: 0.05
+    n_estimators: 100
+    random_state: 42
+    columns:
+      - "TEC"
+      - "foF2"
+      - "hmF2"
+      - "F10.7"
+      - "Kp"
+      - "Dst"
+
+  # Action on detected outliers: clip | nan | drop | flag
+  action: "clip"
+
+# ---------------------------------------------------------------------------
+# Scaling
+# ---------------------------------------------------------------------------
+scaling:
+  # Scaler type: robust | standard | minmax
+  scaler_type: "robust"
+  fit_on_train_only: true
+
+  # Columns to exclude from scaling
+  exclude_columns:
+    - "Station"
+    - "Timestamp"
+    - "Season"            # categorical
+    - "QF"               # quality flag - ordinal
+
+# ---------------------------------------------------------------------------
+# Sliding Window / Sequence Generation
+# ---------------------------------------------------------------------------
+sequences:
+  # Time resolution of data (minutes)
+  temporal_resolution_minutes: 15
+
+  # Window sizes in hours
+  window_sizes_hours:
+    - 2
+    - 6
+    - 12
+    - 24
+    - 48
+
+  # Default window to use for Phase 2 model
+  default_window_hours: 24
+
+  # Stride (in steps) between sequences
+  stride: 1
+
+  # Whether to pad incomplete sequences at the start
+  pad_incomplete: false
+
+  # Minimum sequence completeness (fraction)
+  min_completeness: 0.80
+
+# ---------------------------------------------------------------------------
+# Dataset Splits
+# ---------------------------------------------------------------------------
+splits:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  # Splitting strategy: temporal | random | station
+  strategy: "temporal"
+  # If temporal: split point based on date fraction
+  shuffle: false
+
+# ---------------------------------------------------------------------------
+# Training Hyperparameters (for Phase 2 reference)
+# ---------------------------------------------------------------------------
+training:
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+  learning_rate: 0.001
+  max_epochs: 200
+  early_stopping_patience: 20
+  random_seed: 42
+
+# ---------------------------------------------------------------------------
+# Hardware
+# ---------------------------------------------------------------------------
+hardware:
+  use_gpu: true
+  gpu_id: 0
+  mixed_precision: false
+
+# ---------------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------------
+logging:
+  level: "DEBUG"           # DEBUG | INFO | WARNING | ERROR | CRITICAL
+  console: true
+  file: true
+  log_file: "logs/phase1_pipeline.log"
+  rotation: "midnight"
+  backup_count: 7
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(funcName)s:%(lineno)d | %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"

@@ -1,0 +1,2368 @@
+{
+  "generated_at": "2026-07-05T21:36:07",
+  "project": "Physics-Guided Hybrid Mamba-TKAN TEC Reconstruction",
+  "phase": 1,
+  "summary": {
+    "total": 336,
+    "pass": 336,
+    "warning": 0,
+    "fail": 0,
+    "skip": 0,
+    "overall_pass": true,
+    "ready_for_phase2": true
+  },
+  "results": [
+    {
+      "name": "Directory: config",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: data",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: data/raw",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: data/processed",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: data/intermediate",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: logs",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: results",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: models",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: src",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Directory: utils",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "[Optional] Directory: notebooks",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "[Optional] Directory: results/plots",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "[Optional] Directory: models/scalers",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "[Optional] Directory: validation",
+      "status": "PASS",
+      "detail": "exists",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "config.yaml exists",
+      "status": "PASS",
+      "detail": "D:\\Final_year_project\\project\\config\\config.yaml",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "config.yaml is valid YAML",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "config.yaml top-level is a dict",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [project] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [project].name",
+      "status": "PASS",
+      "detail": "Mamba-TKAN-TEC-Reconstruction",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [project].version",
+      "status": "PASS",
+      "detail": "1.0.0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [project].phase",
+      "status": "PASS",
+      "detail": "1",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [paths] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].data_root",
+      "status": "PASS",
+      "detail": "data",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].raw_data",
+      "status": "PASS",
+      "detail": "data/raw",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].processed_data",
+      "status": "PASS",
+      "detail": "data/processed",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].logs",
+      "status": "PASS",
+      "detail": "logs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].models",
+      "status": "PASS",
+      "detail": "models",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [paths].results",
+      "status": "PASS",
+      "detail": "results",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [data] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [data].input_file",
+      "status": "PASS",
+      "detail": "data/raw/ionosonde_data.csv",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [data].target_column",
+      "status": "PASS",
+      "detail": "TopsideTEC",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [data].timestamp_column",
+      "status": "PASS",
+      "detail": "Timestamp",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [data].station_column",
+      "status": "PASS",
+      "detail": "Station",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [features] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [features].ionosonde_features",
+      "status": "PASS",
+      "detail": "['TEC', 'foF2', 'hmF2', 'scaleF2', 'B0', 'B1', 'zhalfNm', 'y",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [features].space_weather_features",
+      "status": "PASS",
+      "detail": "['F10.7', 'Kp', 'Ap', 'Dst', 'SSN']",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [sequences] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [sequences].window_sizes_hours",
+      "status": "PASS",
+      "detail": "[2, 6, 12, 24, 48]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [sequences].default_window_hours",
+      "status": "PASS",
+      "detail": "24",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [sequences].temporal_resolution_minutes",
+      "status": "PASS",
+      "detail": "15",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [splits] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [splits].train",
+      "status": "PASS",
+      "detail": "0.7",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [splits].validation",
+      "status": "PASS",
+      "detail": "0.15",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [splits].test",
+      "status": "PASS",
+      "detail": "0.15",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [splits].strategy",
+      "status": "PASS",
+      "detail": "temporal",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [training] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [training].batch_size",
+      "status": "PASS",
+      "detail": "64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [training].learning_rate",
+      "status": "PASS",
+      "detail": "0.001",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [training].random_seed",
+      "status": "PASS",
+      "detail": "42",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [training].max_epochs",
+      "status": "PASS",
+      "detail": "200",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [hardware] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [hardware].use_gpu",
+      "status": "PASS",
+      "detail": "True",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Section [logging] exists",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [logging].level",
+      "status": "PASS",
+      "detail": "DEBUG",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "  [logging].log_file",
+      "status": "PASS",
+      "detail": "logs/phase1_pipeline.log",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "window_sizes_hours is a non-empty list",
+      "status": "PASS",
+      "detail": "[2, 6, 12, 24, 48]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "batch_size is a positive integer",
+      "status": "PASS",
+      "detail": "64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "learning_rate is in (0, 1)",
+      "status": "PASS",
+      "detail": "0.001",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "random_seed is set",
+      "status": "PASS",
+      "detail": "42",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "use_gpu flag is a boolean",
+      "status": "PASS",
+      "detail": "True",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "station_list is defined (may be empty)",
+      "status": "PASS",
+      "detail": "0 stations",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Path configured: data.input_file",
+      "status": "PASS",
+      "detail": "data/raw/ionosonde_data.csv",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Path configured: data.output_processed_csv",
+      "status": "PASS",
+      "detail": "data/processed/processed_dataset.csv",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Path configured: data.output_numpy_dir",
+      "status": "PASS",
+      "detail": "data/processed/numpy",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Path configured: data.output_tensor_dir",
+      "status": "PASS",
+      "detail": "data/processed/tensors",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "ionosonde_data.csv exists",
+      "status": "PASS",
+      "detail": "D:\\Final_year_project\\project\\data\\raw\\ionosonde_data.csv",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "ionosonde_data.csv is non-empty",
+      "status": "PASS",
+      "detail": "1180.2 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "ionosonde_data.csv is readable",
+      "status": "PASS",
+      "detail": "8640 rows \u00d7 22 cols  [0.04s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "ionosonde_data.csv has \u2265100 rows",
+      "status": "PASS",
+      "detail": "8640 rows",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "OMNI column present: F10.7",
+      "status": "PASS",
+      "detail": "ok",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "OMNI column present: Kp",
+      "status": "PASS",
+      "detail": "ok",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "OMNI column present: Ap",
+      "status": "PASS",
+      "detail": "ok",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "OMNI column present: Dst",
+      "status": "PASS",
+      "detail": "ok",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "OMNI column present: SSN",
+      "status": "PASS",
+      "detail": "ok",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Timestamp",
+      "status": "PASS",
+      "detail": "str",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Station",
+      "status": "PASS",
+      "detail": "str",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Latitude",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Longitude",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: TEC",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: foF2",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: hmF2",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: scaleF2",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: B0",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: B1",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: zhalfNm",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: yF2",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: FF",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: QF",
+      "status": "PASS",
+      "detail": "int64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: F10.7",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Kp",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Ap",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: Dst",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: SSN",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: DayOfYear",
+      "status": "PASS",
+      "detail": "int64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: LocalTime",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Column present: TopsideTEC",
+      "status": "PASS",
+      "detail": "float64",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Timestamp parseable as datetime64",
+      "status": "PASS",
+      "detail": "8640/8640 valid (100.0%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Station is string/object dtype",
+      "status": "PASS",
+      "detail": "str",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Latitude is numeric (float)",
+      "status": "PASS",
+      "detail": "8640/8640 valid (100.0%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Longitude is numeric (float)",
+      "status": "PASS",
+      "detail": "8640/8640 valid (100.0%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: Latitude",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: Longitude",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: TEC",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: foF2",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: hmF2",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: scaleF2",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: B0",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: B1",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: zhalfNm",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: yF2",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: FF",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: QF",
+      "status": "PASS",
+      "detail": "100.0% numeric (int64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: F10.7",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: Kp",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: Ap",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: Dst",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: SSN",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: DayOfYear",
+      "status": "PASS",
+      "detail": "100.0% numeric (int64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: LocalTime",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Numeric: TopsideTEC",
+      "status": "PASS",
+      "detail": "100.0% numeric (float64)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "No infinite values in dataset",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "No column exceeds 30% missing values",
+      "status": "PASS",
+      "detail": "Critical columns: []",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Duplicated rows",
+      "status": "PASS",
+      "detail": "0 (0.00%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Duplicated (Timestamp, Station) pairs",
+      "status": "PASS",
+      "detail": "0 (0.00%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Number of unique stations",
+      "status": "PASS",
+      "detail": "3 stations",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "IQR outlier detection completed",
+      "status": "PASS",
+      "detail": "Total IQR outliers: 588",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Z-score outlier detection completed",
+      "status": "PASS",
+      "detail": "Total Z-score outliers: 134",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:00"
+    },
+    {
+      "name": "Isolation Forest outlier detection completed",
+      "status": "PASS",
+      "detail": "432 outliers (5.00%) on ['TEC', 'foF2', 'hmF2', 'F10.7', 'Kp', 'Dst']",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:01"
+    },
+    {
+      "name": "Import: src.preprocessing",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "DataLoader.load() succeeds",
+      "status": "PASS",
+      "detail": "8640 rows \u00d7 22 cols [0.03s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "Timestamp parsed as datetime64",
+      "status": "PASS",
+      "detail": "datetime64[us]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "InfiniteValueHandler removes all Inf values",
+      "status": "PASS",
+      "detail": "0 \u2192 0 infinites",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "MissingValueHandler reduces NaN count",
+      "status": "PASS",
+      "detail": "0 \u2192 0 NaNs [0.02s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "OutlierDetector returns valid DataFrame",
+      "status": "PASS",
+      "detail": "768 rows flagged [0.23s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "Outlier mask has same index as input",
+      "status": "PASS",
+      "detail": "mask=(8640, 22), df=(8640, 22)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "DataScaler.fit_transform() succeeds",
+      "status": "PASS",
+      "detail": "[0.02s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "Scaled data has no NaN values",
+      "status": "PASS",
+      "detail": "0 NaNs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "Scaled data has no Inf values",
+      "status": "PASS",
+      "detail": "0 infinites",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:03"
+    },
+    {
+      "name": "PreprocessingPipeline.run() completes",
+      "status": "PASS",
+      "detail": "[0.30s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Processed df is non-empty",
+      "status": "PASS",
+      "detail": "(8640, 22)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Train/Val/Test split non-empty",
+      "status": "PASS",
+      "detail": "train=6048(70.0%)  val=1296(15.0%)  test=1296(15.0%)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "feature_names.json loadable",
+      "status": "PASS",
+      "detail": "39 features listed",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: Hour",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: Month",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: Season",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: LocalTime_sin",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: LocalTime_cos",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: DayOfYear_sin",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: DayOfYear_cos",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: Month_sin",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: Month_cos",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_diff1",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_gradient",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_lag1",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_lag2",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_lag3",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_mean_3",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_mean_6",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_mean_12",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_std_3",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_std_6",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature in feature_names.json: TEC_roll_std_12",
+      "status": "PASS",
+      "detail": "present",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "NumPy train_X feature count matches metadata",
+      "status": "PASS",
+      "detail": "got 39, expected 39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Engineered features present in feature names (20/20)",
+      "status": "PASS",
+      "detail": "20 of 20 found in feature_names.json",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): Hour",
+      "status": "PASS",
+      "detail": "min=0.000, max=23.000  expected[0.0,23.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): Month",
+      "status": "PASS",
+      "detail": "min=1.000, max=1.000  expected[1.0,12.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): Season",
+      "status": "PASS",
+      "detail": "min=0.000, max=0.000  expected[0.0,3.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): LocalTime_sin",
+      "status": "PASS",
+      "detail": "min=-0.256, max=0.259  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): LocalTime_cos",
+      "status": "PASS",
+      "detail": "min=0.966, max=1.000  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): DayOfYear_sin",
+      "status": "PASS",
+      "detail": "min=-0.017, max=-0.014  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): DayOfYear_cos",
+      "status": "PASS",
+      "detail": "min=1.000, max=1.000  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): Month_sin",
+      "status": "PASS",
+      "detail": "min=0.500, max=0.500  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Values OK (NumPy): Month_cos",
+      "status": "PASS",
+      "detail": "min=0.866, max=0.866  expected[-1.0,1.0]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "FeatureEngineeringPipeline.run() on sample data",
+      "status": "PASS",
+      "detail": "20/20 features generated",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "No cross-station TEC lag leakage detected",
+      "status": "PASS",
+      "detail": "Lag isolated per station",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Numeric feature columns identified",
+      "status": "PASS",
+      "detail": "19 columns",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "RobustScaler: fit_transform() succeeds",
+      "status": "PASS",
+      "detail": "shape=(8640, 19)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "RobustScaler: no NaN after scaling",
+      "status": "PASS",
+      "detail": "0 NaNs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "RobustScaler: no Inf after scaling",
+      "status": "PASS",
+      "detail": "0 infs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "RobustScaler: median close to 0 (max_dev<1.0)",
+      "status": "PASS",
+      "detail": "max_median_deviation=0.0000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "StandardScaler: fit_transform() succeeds",
+      "status": "PASS",
+      "detail": "shape=(8640, 19)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "StandardScaler: no NaN after scaling",
+      "status": "PASS",
+      "detail": "0 NaNs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "StandardScaler: no Inf after scaling",
+      "status": "PASS",
+      "detail": "0 infs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "StandardScaler: approximate zero mean (|mean|<0.5)",
+      "status": "PASS",
+      "detail": "global_mean=-0.0000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "MinMaxScaler: fit_transform() succeeds",
+      "status": "PASS",
+      "detail": "shape=(8640, 19)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "MinMaxScaler: no NaN after scaling",
+      "status": "PASS",
+      "detail": "0 NaNs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "MinMaxScaler: no Inf after scaling",
+      "status": "PASS",
+      "detail": "0 infs",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "MinMaxScaler: output in [0, 1]",
+      "status": "PASS",
+      "detail": "min=0.0000, max=1.0000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(robust): no NaN/Inf after transform",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(robust): inverse_transform accuracy (<5%)",
+      "status": "PASS",
+      "detail": "max_rel_error=0.000000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(standard): no NaN/Inf after transform",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(standard): inverse_transform accuracy (<5%)",
+      "status": "PASS",
+      "detail": "max_rel_error=0.000000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(minmax): no NaN/Inf after transform",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "DataScaler(minmax): inverse_transform accuracy (<5%)",
+      "status": "PASS",
+      "detail": "max_rel_error=0.000000",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Import: src.dataset (SlidingWindowDataset)",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Feature columns identified for sliding window",
+      "status": "PASS",
+      "detail": "19 features",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Window 2h: shape (8, 19) correct",
+      "status": "PASS",
+      "detail": "got X=(8, 19) y=(1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Window 2h: no NaN/Inf in sequences",
+      "status": "PASS",
+      "detail": "8616 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:04"
+    },
+    {
+      "name": "Window 6h: shape (24, 19) correct",
+      "status": "PASS",
+      "detail": "got X=(24, 19) y=(1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 6h: no NaN/Inf in sequences",
+      "status": "PASS",
+      "detail": "8568 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 12h: shape (48, 19) correct",
+      "status": "PASS",
+      "detail": "got X=(48, 19) y=(1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 12h: no NaN/Inf in sequences",
+      "status": "PASS",
+      "detail": "8496 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 24h: shape (96, 19) correct",
+      "status": "PASS",
+      "detail": "got X=(96, 19) y=(1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 24h: no NaN/Inf in sequences",
+      "status": "PASS",
+      "detail": "8352 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 48h: shape (192, 19) correct",
+      "status": "PASS",
+      "detail": "got X=(192, 19) y=(1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Window 48h: no NaN/Inf in sequences",
+      "status": "PASS",
+      "detail": "8064 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "SlidingWindowDataset instantiation",
+      "status": "PASS",
+      "detail": "8352 sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "SlidingWindowDataset.__len__() returns positive int",
+      "status": "PASS",
+      "detail": "8352",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "SlidingWindowDataset.__getitem__(0) returns tensors",
+      "status": "PASS",
+      "detail": "X=torch.Size([96, 19]) y=torch.Size([1])",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "X tensor is 2D (steps \u00d7 features)",
+      "status": "PASS",
+      "detail": "torch.Size([96, 19])",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "y tensor is 1D (target scalar)",
+      "status": "PASS",
+      "detail": "torch.Size([1])",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "Import: torch and src.dataset",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:05"
+    },
+    {
+      "name": "TECReconstructionDataset instantiated",
+      "status": "PASS",
+      "detail": "8352 sequences [0.23s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "__len__() returns positive integer",
+      "status": "PASS",
+      "detail": "8352",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "__getitem__(0) returns (Tensor, Tensor)",
+      "status": "PASS",
+      "detail": "X type=Tensor y type=Tensor",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "X tensor shape: (window_steps, n_features)",
+      "status": "PASS",
+      "detail": "got (96, 19), expected (96, 19)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "y tensor shape: (1,)",
+      "status": "PASS",
+      "detail": "got (1,)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "X tensor dtype is float32",
+      "status": "PASS",
+      "detail": "torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "y tensor dtype is float32",
+      "status": "PASS",
+      "detail": "torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "X tensor is finite (no NaN/Inf)",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor transferable to CPU",
+      "status": "PASS",
+      "detail": "cpu",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "DataLoader created successfully",
+      "status": "PASS",
+      "detail": "261 batches",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Batch X shape: (32, 96, 19)",
+      "status": "PASS",
+      "detail": "got (32, 96, 19) [0.018s]",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Batch y shape: (32,) \u2014 scalar targets",
+      "status": "PASS",
+      "detail": "got (32, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Batch X is finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Multiple stations in dataset",
+      "status": "PASS",
+      "detail": "3 unique stations",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Per-station dataset can be built independently",
+      "status": "PASS",
+      "detail": "{'DB049': 2872, 'EG931': 2872, 'JR055': 2872}",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "All stations have records",
+      "status": "PASS",
+      "detail": "min=2880, max=2880 records/station",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "pipeline.log exists",
+      "status": "PASS",
+      "detail": "D:\\Final_year_project\\project\\logs\\phase1_pipeline.log",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "pipeline.log is non-empty",
+      "status": "PASS",
+      "detail": "201.7 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "pipeline.log is readable",
+      "status": "PASS",
+      "detail": "1712 lines",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Log contains INFO entries",
+      "status": "PASS",
+      "detail": "819 INFO lines",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Log contains WARNING entries",
+      "status": "PASS",
+      "detail": "8 WARNING lines",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Log ERROR count",
+      "status": "PASS",
+      "detail": "0 ERROR lines",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Log contains execution timestamps",
+      "status": "PASS",
+      "detail": "1692 timestamped lines",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Log contains pipeline step start/end markers",
+      "status": "PASS",
+      "detail": "130 START, 143 END markers",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "get_logger() returns logging.Logger",
+      "status": "PASS",
+      "detail": "Logger",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Logger name is set correctly",
+      "status": "PASS",
+      "detail": "validation.test_logger_check",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "pipeline_timer context manager works",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "log_dataframe_summary works",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "configure_from_dict() works",
+      "status": "PASS",
+      "detail": "",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "processed_dataset.csv exists",
+      "status": "PASS",
+      "detail": "1779.8 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "processed_dataset.csv is non-empty",
+      "status": "PASS",
+      "detail": "1822465 bytes",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "processed_dataset.csv readable as CSV",
+      "status": "PASS",
+      "detail": "22 columns",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "train.csv exists",
+      "status": "PASS",
+      "detail": "2327.9 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "train.csv is non-empty",
+      "status": "PASS",
+      "detail": "2383754 bytes",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "val.csv exists",
+      "status": "PASS",
+      "detail": "496.2 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "val.csv is non-empty",
+      "status": "PASS",
+      "detail": "508160 bytes",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "test.csv exists",
+      "status": "PASS",
+      "detail": "495.9 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "test.csv is non-empty",
+      "status": "PASS",
+      "detail": "507768 bytes",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_X.npy exists",
+      "status": "PASS",
+      "detail": "84240.1 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_X.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(5760, 96, 39) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_X.npy non-empty",
+      "status": "PASS",
+      "detail": "21565440 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_X.npy finite values",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_X.npy is 3D (N, W, F)",
+      "status": "PASS",
+      "detail": "ndim=3, shape=(5760, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_y.npy exists",
+      "status": "PASS",
+      "detail": "22.6 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_y.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(5760, 1) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_y.npy non-empty",
+      "status": "PASS",
+      "detail": "5760 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train_y.npy is 1D or 2D",
+      "status": "PASS",
+      "detail": "shape=(5760, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_X.npy exists",
+      "status": "PASS",
+      "detail": "14742.1 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_X.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 96, 39) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_X.npy non-empty",
+      "status": "PASS",
+      "detail": "3773952 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_X.npy finite values",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_X.npy is 3D (N, W, F)",
+      "status": "PASS",
+      "detail": "ndim=3, shape=(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_y.npy exists",
+      "status": "PASS",
+      "detail": "4.1 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_y.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 1) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_y.npy non-empty",
+      "status": "PASS",
+      "detail": "1008 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val_y.npy is 1D or 2D",
+      "status": "PASS",
+      "detail": "shape=(1008, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_X.npy exists",
+      "status": "PASS",
+      "detail": "14742.1 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_X.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 96, 39) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_X.npy non-empty",
+      "status": "PASS",
+      "detail": "3773952 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_X.npy finite values",
+      "status": "PASS",
+      "detail": "nan=0, inf=0",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_X.npy is 3D (N, W, F)",
+      "status": "PASS",
+      "detail": "ndim=3, shape=(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_y.npy exists",
+      "status": "PASS",
+      "detail": "4.1 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_y.npy loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 1) dtype=float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_y.npy non-empty",
+      "status": "PASS",
+      "detail": "1008 elements",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test_y.npy is 1D or 2D",
+      "status": "PASS",
+      "detail": "shape=(1008, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: train X and y row counts match",
+      "status": "PASS",
+      "detail": "X=5760, y=5760",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: val X and y row counts match",
+      "status": "PASS",
+      "detail": "X=1008, y=1008",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "NumPy: test X and y row counts match",
+      "status": "PASS",
+      "detail": "X=1008, y=1008",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_X.pt exists",
+      "status": "PASS",
+      "detail": "84241.5 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_X.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(5760, 96, 39) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_X.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_y.pt exists",
+      "status": "PASS",
+      "detail": "24.0 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_y.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(5760, 1) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: train_y.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_X.pt exists",
+      "status": "PASS",
+      "detail": "14743.5 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_X.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 96, 39) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_X.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_y.pt exists",
+      "status": "PASS",
+      "detail": "5.4 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_y.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 1) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: val_y.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_X.pt exists",
+      "status": "PASS",
+      "detail": "14743.5 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_X.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 96, 39) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_X.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_y.pt exists",
+      "status": "PASS",
+      "detail": "5.4 KB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_y.pt loadable",
+      "status": "PASS",
+      "detail": "shape=(1008, 1) dtype=torch.float32",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Tensor: test_y.pt finite",
+      "status": "PASS",
+      "detail": "clean",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "train_X: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(5760, 96, 39), NPY=(5760, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "train_y: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(5760, 1), NPY=(5760, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "val_X: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(1008, 96, 39), NPY=(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "val_y: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(1008, 1), NPY=(1008, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "test_X: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(1008, 96, 39), NPY=(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "test_y: PT shape matches NPY shape",
+      "status": "PASS",
+      "detail": "PT=(1008, 1), NPY=(1008, 1)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "JSON: dataset_metadata.json exists",
+      "status": "PASS",
+      "detail": "found",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "JSON: dataset_metadata.json valid JSON",
+      "status": "PASS",
+      "detail": "type=dict",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Metadata: 'n_features' key present",
+      "status": "PASS",
+      "detail": "39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Metadata: 'feature_columns' key present",
+      "status": "PASS",
+      "detail": "['TEC', 'foF2', 'hmF2', 'scaleF2', 'B0', 'B1', 'zhalfNm', 'y",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Metadata: 'target_column' key present",
+      "status": "PASS",
+      "detail": "TopsideTEC",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "JSON: feature_names.json exists",
+      "status": "PASS",
+      "detail": "found",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "JSON: feature_names.json valid JSON",
+      "status": "PASS",
+      "detail": "type=dict",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Data loading time acceptable (<60s)",
+      "status": "PASS",
+      "detail": "0.03s, 1.6 MB",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Preprocessing time acceptable (<120s)",
+      "status": "PASS",
+      "detail": "0.02s",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:06"
+    },
+    {
+      "name": "Feature engineering time acceptable (<120s)",
+      "status": "PASS",
+      "detail": "0.16s",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Sliding window generation time acceptable (<60s)",
+      "status": "PASS",
+      "detail": "0.18s for 1904 sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Performance results saved",
+      "status": "PASS",
+      "detail": "D:\\Final_year_project\\project\\results\\performance_benchmark.json",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Dataset metadata.json readable",
+      "status": "PASS",
+      "detail": "39 features, window=24h, scaler=robust",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Number of features is reasonable (\u226510)",
+      "status": "PASS",
+      "detail": "39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Target column specified",
+      "status": "PASS",
+      "detail": "TopsideTEC",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "train X shape: (N, W, F)",
+      "status": "PASS",
+      "detail": "(5760, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "train has \u22651 sample",
+      "status": "PASS",
+      "detail": "5760 samples",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "train feature count matches metadata (39)",
+      "status": "PASS",
+      "detail": "X.shape[2]=39, metadata.n_features=39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "val X shape: (N, W, F)",
+      "status": "PASS",
+      "detail": "(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "val has \u22651 sample",
+      "status": "PASS",
+      "detail": "1008 samples",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "val feature count matches metadata (39)",
+      "status": "PASS",
+      "detail": "X.shape[2]=39, metadata.n_features=39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "test X shape: (N, W, F)",
+      "status": "PASS",
+      "detail": "(1008, 96, 39)",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "test has \u22651 sample",
+      "status": "PASS",
+      "detail": "1008 samples",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "test feature count matches metadata (39)",
+      "status": "PASS",
+      "detail": "X.shape[2]=39, metadata.n_features=39",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Total samples across all splits",
+      "status": "PASS",
+      "detail": "7776 total sequences",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: Raw data exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: Processed CSV exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: NumPy train_X exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: NumPy train_y exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: Tensors train_X.pt exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: Metadata JSON exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    },
+    {
+      "name": "Phase 2 Gate: Log file exists",
+      "status": "PASS",
+      "detail": "\u2714",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-07-05 21:36:07"
+    }
+  ]
+}

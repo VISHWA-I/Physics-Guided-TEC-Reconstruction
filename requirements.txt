@@ -1,0 +1,48 @@
+# =============================================================================
+# Full Project Requirements – Mamba-TKAN TEC Reconstruction
+# Python >= 3.12
+# =============================================================================
+
+# Core scientific computing
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.13.0
+
+# Machine learning utilities (for preprocessing, clustering, novelty detection)
+scikit-learn>=1.4.0
+umap-learn>=0.5.5
+networkx>=3.2.1
+
+# Deep learning framework (Core Hybrid Model)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Configuration
+PyYAML>=6.0.1
+h5py>=3.10.0
+
+# Plotting (for notebooks, Phase 6 Publication Figures, SDM Visualizations)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Operational Digital Twin (Phase 5)
+streamlit>=1.31.0
+fastapi>=0.110.0
+uvicorn>=0.27.1
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Type checking & Code formatting
+mypy>=1.8.0
+black>=24.0.0
+isort>=5.13.0
+flake8>=7.0.0
+
+# Testing & Verification
+pytest>=8.0.0
+pytest-cov>=4.1.0

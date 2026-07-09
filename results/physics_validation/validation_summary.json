@@ -1,0 +1,11 @@
+{
+    "Tensor Shapes": "PASS",
+    "Physics Constraints": "PASS",
+    "Alignment": "PASS",
+    "Net TEC": "PASS",
+    "Electron Density": "PASS",
+    "Delay": "PASS",
+    "Batch Sizes": "PASS",
+    "Sequence Sizes": "PASS",
+    "Future Sequence Sizes": "PASS"
+}

@@ -1,0 +1,53 @@
+{
+  "overall_status": "PASS",
+  "model_config_summary": {
+    "window_size": 24,
+    "temporal_features_count": 6,
+    "physics_features_count": 9
+  },
+  "module_results": {
+    "Dataset": {
+      "Format 'nested' \u2014 batch valid": "PASS",
+      "Format 'flat' \u2014 batch valid": "PASS"
+    },
+    "BatchManager": {
+      "[nested] get_inputs": "PASS",
+      "[nested] get_topside_target": "PASS",
+      "[nested] get_nettec_target": "PASS",
+      "[nested] get_electron_density_target": "PASS",
+      "[nested] get_gnss_delay_target": "PASS",
+      "[nested] get_uncertainty_target": "PASS",
+      "[nested] get_all_targets": "PASS",
+      "[nested] validate_batch": "PASS",
+      "[flat] get_inputs": "PASS",
+      "[flat] get_topside_target": "PASS",
+      "[flat] get_nettec_target": "PASS",
+      "[flat] get_electron_density_target": "PASS",
+      "[flat] get_gnss_delay_target": "PASS",
+      "[flat] get_uncertainty_target": "PASS",
+      "[flat] get_all_targets": "PASS",
+      "[flat] validate_batch": "PASS"
+    },
+    "LossManager": {
+      "Loss computed (no NaN/Inf)": "PASS",
+      "Loss key 'loss_topside' present": "PASS",
+      "Loss key 'loss_net' present": "PASS",
+      "Loss key 'loss_density' present": "PASS",
+      "Loss key 'loss_delay' present": "PASS"
+    },
+    "Validator": {
+      "validate() completed": "PASS",
+      "'val_loss' in metrics": "PASS",
+      "'val_rmse' in metrics": "PASS"
+    },
+    "Backward Compat (Flat)": {
+      "Validator on flat format": "PASS"
+    },
+    "BatchInterfaceError": {
+      "get_topside_target raises BatchInterfaceError": "PASS",
+      "get_nettec_target raises BatchInterfaceError": "PASS",
+      "get_all_targets raises BatchInterfaceError": "PASS",
+      "get_inputs_missing raises BatchInterfaceError": "PASS"
+    }
+  }
+}

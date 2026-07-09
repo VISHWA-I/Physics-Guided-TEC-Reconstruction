@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-07-05T21:36:07",
+  "data_loading": {
+    "time_s": 0.034,
+    "memory_mb": 1.56
+  },
+  "preprocessing": {
+    "time_s": 0.023,
+    "memory_mb": 1.56
+  },
+  "feature_engineering": {
+    "time_s": 0.159,
+    "memory_mb": 2.26
+  },
+  "sliding_window": {
+    "time_s": 0.176,
+    "memory_mb_est": 28.51,
+    "n_sequences": 1904
+  }
+}

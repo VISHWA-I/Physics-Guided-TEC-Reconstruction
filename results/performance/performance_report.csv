@@ -1,0 +1,4 @@
+epoch,wall_time_sec,n_samples,n_batches,samples_per_sec,batches_per_sec,memory_mb,cpu_percent,section_backward_pass,section_checkpoint,section_forward_pass,section_loss,section_optimizer,section_validation
+1,0.0242,5760,180,238285.34,7446.4168,59.8,0.0,0.0055,0.0030,0.0049,0.0040,0.0051,0.0016
+2,0.0178,5760,180,324428.45,10138.3890,59.8,0.0,0.0016,0.0032,0.0021,0.0052,0.0037,0.0019
+3,0.0204,5760,180,282824.32,8838.2598,59.8,0.0,0.0041,0.0030,0.0045,0.0035,0.0026,0.0025

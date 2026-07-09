@@ -1,0 +1,23 @@
+{
+    "epochs": 5,
+    "batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip_val": 1.0,
+    "scheduler": "CosineAnnealing",
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "adaptive_loss_strategy": "UncertaintyWeighting",
+    "physics_penalty_weight": 1.0,
+    "device": "auto",
+    "mixed_precision": true,
+    "multi_gpu": true,
+    "checkpoint_dir": "results/training/checkpoints",
+    "experiment_dir": "results/training/logs/default_run",
+    "save_top_k": 3,
+    "early_stopping_patience": 15,
+    "enable_curriculum": true,
+    "curriculum_advance_patience": 5
+}

@@ -1,0 +1,19 @@
+Dataset
+   v
+Sliding Window
+   v
+Batch
+   v
+Temporal Encoder
+   v
+Physics Encoder
+   v
+Topside TEC
+   v
+Physics Consistency
+   v
+Net TEC
+   v
+Electron Density
+   v
+Delay

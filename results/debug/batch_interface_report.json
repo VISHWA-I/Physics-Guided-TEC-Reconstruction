@@ -1,0 +1,79 @@
+{
+  "batch_structure": {
+    "format": "nested",
+    "top_level_keys": [
+      "temporal_seq",
+      "physics_feats",
+      "geo_feats",
+      "storm_feats",
+      "bottomside_tec",
+      "targets"
+    ]
+  },
+  "tensor_shapes": {
+    "temporal_seq": [
+      32,
+      96,
+      6
+    ],
+    "physics_feats": [
+      32,
+      9
+    ],
+    "geo_feats": [
+      32,
+      4
+    ],
+    "storm_feats": [
+      32,
+      5
+    ],
+    "bottomside_tec": [
+      32,
+      96,
+      1
+    ],
+    "targets": {
+      "topside": [
+        32,
+        96,
+        1
+      ],
+      "net": [
+        32,
+        96,
+        1
+      ],
+      "density": [
+        32,
+        96,
+        1
+      ],
+      "delay": [
+        32,
+        96,
+        1
+      ]
+    }
+  },
+  "target_names": [
+    "topside",
+    "net",
+    "density",
+    "delay"
+  ],
+  "metadata": {
+    "nested_targets_present": true,
+    "flat_targets_present": false,
+    "optional_geometry_present": false,
+    "optional_uncertainty_present": false
+  },
+  "compatibility_status": {
+    "flat_format_supported": "PASS",
+    "nested_format_supported": "PASS",
+    "missing_input_keys": [],
+    "missing_target_keys": [],
+    "unexpected_keys": [],
+    "overall": "PASS"
+  }
+}

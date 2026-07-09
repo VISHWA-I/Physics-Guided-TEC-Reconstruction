@@ -1,0 +1,67 @@
+# model.yaml
+# Phase 2.1 Configuration
+# Defines architecture parameters for the Multi-Branch Mamba-TKAN Network
+
+architecture:
+  window_size: 24
+  embedding_dimension: 64
+  hidden_dimension: 128
+  dropout: 0.1
+  activation: "silu"  # SwiGLU / SiLU is standard for Mamba
+  number_of_blocks: 4
+  normalization: "rmsnorm"
+  
+  # Temporal Embedding Redesign Config
+  temporal_embedding:
+    max_sequence_length: auto
+    dynamic_resize: true
+    position_embedding: learned
+    physics_embedding: true
+    multi_resolution: true
+
+  # Mamba-specific config
+  mamba:
+    state_expansion_factor: 16
+    conv_kernel_size: 4
+    expand_factor: 2
+    use_gradient_checkpointing: false
+
+inputs:
+  input_features: 19
+  temporal_features: ["TEC", "F10.7", "Kp", "Ap", "Dst", "SSN"]
+  physics_features: ["foF2", "hmF2", "scaleF2", "B0", "B1", "zhalfNm", "yF2", "FF", "QF"]
+  geo_features: ["Latitude", "Longitude", "DayOfYear", "LocalTime"]
+  storm_features: ["Kp", "Dst", "Ap", "F10.7", "SSN"]
+
+# Cross Attention Config
+attention:
+  num_heads: 4
+  dropout: 0.1
+  h_size: 32
+
+# Decoder & Memory Config
+decoder:
+  memory_slots: 64
+  memory_heads: 4
+  top_k_retrieval: 8
+  tkan_branches: 3
+  kan_width: 64
+  kan_depth: 3
+
+# Prediction Heads Config
+heads:
+  enable_auxiliary: true
+  mc_dropout_samples: 10
+  geometry_features_dim: 2 # (elevation, azimuth)
+  output_dim: 1
+
+training:
+  batch_size: 32
+  device: "auto"
+  mixed_precision: true
+  random_seed: 42
+  weight_initialization_method: "xavier_uniform"
+
+paths:
+  save_directory: "weights/"
+  checkpoint_directory: "checkpoints/"

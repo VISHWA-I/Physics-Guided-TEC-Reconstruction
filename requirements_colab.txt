@@ -1,0 +1,6 @@
+# Colab-specific requirements (in addition to the standard ones)
+tensorboard>=2.15.0
+onnx>=1.15.0
+onnxruntime>=1.17.0
+tqdm>=4.66.0
+psutil>=5.9.0

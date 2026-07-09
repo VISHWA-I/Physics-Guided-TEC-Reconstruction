@@ -1,0 +1,21 @@
+{
+    "patterns": [],
+    "storms": [],
+    "hypotheses": [
+        {
+            "timestamp": "2026-07-05T20:57:08.141619",
+            "data": [
+                {
+                    "statement": "'Kp' strongly dominates the nonlinear predictive mapping of Topside TEC.",
+                    "confidence_score": 100.0,
+                    "supporting_evidence": "Mutual Information Analysis"
+                },
+                {
+                    "statement": "Discovered 5 unprecedented ionospheric signatures deviating from known physics boundaries.",
+                    "confidence_score": 85.0,
+                    "supporting_evidence": "Isolation Forest Anomaly Density"
+                }
+            ]
+        }
+    ]
+}

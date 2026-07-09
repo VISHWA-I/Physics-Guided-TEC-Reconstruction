@@ -1,0 +1,67 @@
+{
+  "total_epochs": 3,
+  "total_samples_trained": 17280,
+  "execution_mode": "benchmark",
+  "wall_time_sec": {
+    "mean": 0.0208,
+    "std": 0.0032,
+    "min": 0.0178,
+    "max": 0.0242
+  },
+  "samples_per_sec": {
+    "mean": 281846.0339,
+    "std": 43079.8865,
+    "min": 238285.3384,
+    "max": 324428.4483
+  },
+  "memory_mb": {
+    "mean": 59.8333,
+    "std": 0.0045,
+    "min": 59.8281,
+    "max": 59.8359
+  },
+  "cpu_percent": {
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "section_times_sec": {
+    "backward_pass": {
+      "mean": 0.0037,
+      "std": 0.002,
+      "min": 0.0016,
+      "max": 0.0055
+    },
+    "checkpoint": {
+      "mean": 0.0031,
+      "std": 0.0001,
+      "min": 0.003,
+      "max": 0.0032
+    },
+    "forward_pass": {
+      "mean": 0.0038,
+      "std": 0.0015,
+      "min": 0.0021,
+      "max": 0.0049
+    },
+    "loss": {
+      "mean": 0.0042,
+      "std": 0.0009,
+      "min": 0.0035,
+      "max": 0.0052
+    },
+    "optimizer": {
+      "mean": 0.0038,
+      "std": 0.0012,
+      "min": 0.0026,
+      "max": 0.0051
+    },
+    "validation": {
+      "mean": 0.002,
+      "std": 0.0005,
+      "min": 0.0016,
+      "max": 0.0025
+    }
+  }
+}
