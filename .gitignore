@@ -1,1 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
 
+# Virtual Environment
+venv/
+
+# Logs
+logs/
+
+# Results
+results/
+
+# Checkpoints
+checkpoints/
+
+# Experiments
+experiments/
+
+# Reports
+benchmark_reports/
+evaluation_reports/
+scientific_discovery_reports/
+
+# Offline Outputs
+offline_outputs/
+
+# Archives
+archives/
+
+# Model Files
+*.pt
+*.pth
+*.onnx
+*.pkl
+
+# NumPy
+*.npy
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
