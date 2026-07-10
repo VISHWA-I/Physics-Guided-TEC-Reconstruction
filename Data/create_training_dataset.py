@@ -460,6 +460,10 @@ def main():
     with open(os.path.join(ver_dir, 'validation_dataset.pkl'), 'wb') as f: pickle.dump({'X': X_val, 'y': y_val}, f)
     with open(os.path.join(ver_dir, 'test_dataset.pkl'), 'wb') as f: pickle.dump({'X': X_test, 'y': y_test}, f)
         
+    train_df.to_csv(os.path.join(ver_dir, 'train.csv'), index=False)
+    val_df.to_csv(os.path.join(ver_dir, 'val.csv'), index=False)
+    test_df.to_csv(os.path.join(ver_dir, 'test.csv'), index=False)
+        
     storm_stats = storm_balancing_report(df_clean)
     
     metadata = {
@@ -506,7 +510,7 @@ def main():
         
     # Copy files directly to data/processed as a "latest" alias for backwards compatibility
     import shutil
-    for fname in ['master_dataset.csv', 'train_dataset.pkl', 'validation_dataset.pkl', 'test_dataset.pkl', 'feature_scaler.pkl', 'target_scaler.pkl']:
+    for fname in ['master_dataset.csv', 'train_dataset.pkl', 'validation_dataset.pkl', 'test_dataset.pkl', 'feature_scaler.pkl', 'target_scaler.pkl', 'train.csv', 'val.csv', 'test.csv']:
         src = os.path.join(ver_dir, fname)
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(processed_dir, fname))
